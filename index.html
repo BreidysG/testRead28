@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 28</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El honrado leñador
+                <br><br>
+                Érase una vez un pobre leñador. Vivía en los bosques verdes y silenciosos cerca de un torrente que espumajeaba y salpicaba a su paso, y trabajaba duramente para alimentar a su familia. Cada día hacía una larga caminata por el bosque con su dura y afilada hacha colgada al hombro.
+                <br><br>
+                Solía silbar mientras andaba al pensar que, mientras tuviera salud y su hacha, podría ganar lo suficiente para comprar el pan de su familia. Un día estaba talando un gran roble cerca de la orilla del río. Las astillas saltaban con cada hachazo y el eco de sus golpes resonaba por el bosque con tanta claridad que cualquiera habría pensado que había docenas de leñadores trabajando. Al cabo de un rato, el leñador pensó que descansaría un poco.
+                <br><br>
+                Dejó el hacha apoyada en un árbol y se dio la vuelta para sentarse. Pero tropezó con una vieja raíz retorcida y, antes de que pudiera evitarlo, el hacha resbaló y cayó al río. El pobre leñador se asomó sobre el torrente para intentar ver el fondo, pero en aquel tramo de río era demasiado profundo.
+                <br><br>
+                El agua continuaba fluyendo tan alegremente como antes sobre el tesoro perdido.
+                — ¿Qué voy a hacer? —gritó el leñador—. ¡He perdido mi hacha! ¿Cómo voy a alimentar a mis hijos ahora?
+                <br><br>
+                Tan pronto como dejó de hablar, una hermosa dama surgió de entre las aguas. Era el hada del río y salió a la superficie al oír esa triste voz.
+                — ¿Qué te preocupa? —preguntó dulcemente.
+                <br><br>
+                El leñador le contó su problema y la dama se sumergió de nuevo. Volvió a aparecer con un hacha de plata.
+                — ¿Es ésta el hacha que has perdido? —preguntó. El leñador pensó en todas las cosas bonitas que podría comprar a sus hijos con esa hacha. Pero no era la suya, así que meneó la cabeza y dijo:
+                —La mía era un hacha de simple acero.
+                <br><br>
+                El hada del río dejó el hacha de plata en la orilla y se sumergió de nuevo. Pronto volvió a aparecer y mostró al hombre otra hacha.
+                — ¿Acaso es ésta la tuya? —preguntó.
+                <br><br>
+                El hombre la miró.
+                — ¡Oh, no! —contestó—. ¡Ésa es de oro! ¡Es muchísimo más valiosa que la mía!
+                <br><br>
+                El hada del río dejó el hacha de oro en la orilla y se zambulló otra vez. Al aparecer de nuevo, llevaba el hacha perdida.
+                — ¡Ésta es la mía! —gritó el leñador—. ¡Ésta es de verdad mi hacha!
+                <br><br>
+                —Es la tuya —dijo el hada—. Y también lo son las otras dos. Son un regalo del río por haber dicho la verdad.
+                <br><br>
+                Y esa noche el leñador volvió a su casa con las tres hachas sobre el hombro. Silbaba alegremente al pensar en todas las cosas buenas que llevaría a su familia.
+                <br><br>
+            </p>
+            
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
